@@ -37,7 +37,7 @@ public class Validaciones {
                 alert.setContentText("Lista Correcta....");
                 alert.showAndWait();
                 System.out.println(laFechaPicker.getValue());
-                HelloApplication.setFXML("viaje-view","ss");
+                HelloApplication.setFXML("viaje-view","viaje");
             }
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);

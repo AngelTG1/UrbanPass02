@@ -21,7 +21,7 @@ public class HelloApplication extends Application {
 
         this.stage=stage;
         //se crea la escena
-        scene = new Scene(loadFXML("viaje-view"));
+        scene = new Scene(loadFXML("menulook-view"));
         stage.setTitle("holaa");
         stage.setScene(scene);
         stage.setTitle("Hello!");
