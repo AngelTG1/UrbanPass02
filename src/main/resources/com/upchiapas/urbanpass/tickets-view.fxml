@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="241.0" prefWidth="667.0" style="-fx-border-radius: 15x;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.urbanpass.controllers.TicketsController">
+   <children>
+      <ImageView fitHeight="230.0" fitWidth="460.0" layoutX="34.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assts/img/image%206.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="238.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assts/img/taxi1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="220.0" fitWidth="40.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assts/img/codigo-de-barras1.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="471.0" prefHeight="253.0" prefWidth="199.0" style="-fx-background-color: #E53838;">
+         <children>
+            <ImageView fitHeight="27.0" fitWidth="162.0" layoutX="19.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assts/img/image5.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="5.0" layoutY="66.0" text="Nombre conductor">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="144.0" layoutY="66.0" text="Viaje">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="127.0" text="Precio">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="136.0" layoutY="127.0" text="Asiento">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="176.0" text="Fecha">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="152.0" text="\$80" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="144.0" layoutY="176.0" text="Hora">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="195.0" text="01/07/2022" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtHora" layoutX="116.0" layoutY="195.0" prefHeight="17.0" prefWidth="71.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="144.0" layoutY="221.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="221.0" text="Numero Urban:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="11.0" layoutY="95.0" text="Angel Tagua" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="141.0" layoutY="95.0" text="F3954" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtAsiento1" layoutX="152.0" layoutY="148.0" prefHeight="25.0" prefWidth="21.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtNoTaxi11" layoutX="144.0" layoutY="219.0" prefHeight="17.0" prefWidth="52.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="71.0" layoutY="12.0" prefHeight="27.0" prefWidth="107.0" text="Nombre conductor" textFill="#c1aeae">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="304.0" layoutY="17.0" text="Fecha" textFill="#c1aeae">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="17.0" text="Asiento" textFill="#c1aeae">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="109.0" text="VILLAFLORES">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="305.0" layoutY="109.0" text="TUXTLA GTZ">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="221.0" layoutY="194.0" text="Hora de salida" textFill="#e53838">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtNoTaxi1" layoutX="236.0" layoutY="219.0" prefHeight="17.0" prefWidth="52.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="287.0" layoutY="45.0" text="01/07/2022">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="253.0" fitWidth="7.0" layoutX="469.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assts/img/Vector%206.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="392.0" layoutY="219.0" text="Urban pass" textFill="#a79b9b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="45.0" text="Angel Tagua" textFill="#060000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="207.0" layoutY="17.0" text="Viaje" textFill="#c1aeae">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="203.0" layoutY="45.0" text="F3954" textFill="#060000">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtAsiento" layoutX="395.0" layoutY="41.0" prefHeight="25.0" prefWidth="21.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtHora1" layoutX="219.0" layoutY="215.0" prefHeight="17.0" prefWidth="71.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

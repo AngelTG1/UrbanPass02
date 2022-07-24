@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="667.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.upchiapas.urbanpass.controllers.UrbansController">
+   <children>
+      <BorderPane layoutX="25.0" layoutY="196.0" prefHeight="12.0" prefWidth="37.0" style="-fx-background-color: #000;" />
+      <BorderPane layoutX="313.0" layoutY="196.0" prefHeight="12.0" prefWidth="37.0" style="-fx-background-color: #000;" />
+      <Circle fill="#d9d9d9" layoutX="188.0" layoutY="247.0" radius="144.0" stroke="BLACK" strokeType="INSIDE" />
+      <BorderPane layoutX="43.0" layoutY="225.0" prefHeight="427.95" prefWidth="290.07" style="-fx-background-color: #d9d9d9;">
+         <top>
+            <BorderPane prefHeight="23.0" prefWidth="297.0" style="-fx-background-color: #000;" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <Button fx:id="btnasiento1" layoutX="52.0" layoutY="299.0" minHeight="79.0" mnemonicParsing="false" onMouseClicked="#btnasiento1OnMouseClicked" prefWidth="82.0" style="-fx-background-color: #2CD63D;" text="1">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnasiento4" layoutX="236.0" layoutY="422.0" minHeight="79.0" mnemonicParsing="false" onMouseClicked="#btnasiento1OnMouseClicked" prefWidth="82.0" style="-fx-background-color: #2CD63D;" text="4">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnasiento3" layoutX="52.0" layoutY="421.0" minHeight="79.0" mnemonicParsing="false" onMouseClicked="#btnasiento1OnMouseClicked" prefWidth="82.0" style="-fx-background-color: #2CD63D;" text="3">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnasiento5" layoutX="52.0" layoutY="547.0" minHeight="79.0" mnemonicParsing="false" onMouseClicked="#btnasiento1OnMouseClicked" prefWidth="82.0" style="-fx-background-color: #2CD63D;" text="5">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnasiento6" layoutX="147.0" layoutY="547.0" minHeight="79.0" mnemonicParsing="false" onMouseClicked="#btnasiento1OnMouseClicked" prefWidth="82.0" style="-fx-background-color: #2CD63D;" text="6">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnasiento7" layoutX="243.0" layoutY="547.0" minHeight="79.0" mnemonicParsing="false" onMouseClicked="#btnasiento1OnMouseClicked" prefWidth="82.0" style="-fx-background-color: #2CD63D;" text="7">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnasiento2" layoutX="236.0" layoutY="299.0" minHeight="79.0" mnemonicParsing="false" onMouseClicked="#btnasiento1OnMouseClicked" prefWidth="82.0" style="-fx-background-color: #2CD63D;" text="2">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Button>
+      <BorderPane layoutX="31.0" layoutY="255.0" prefHeight="77.0" prefWidth="12.0" style="-fx-background-color: #000;" />
+      <BorderPane layoutX="31.0" layoutY="535.0" prefHeight="77.0" prefWidth="12.0" style="-fx-background-color: #000;" />
+      <BorderPane layoutX="332.0" layoutY="255.0" prefHeight="77.0" prefWidth="12.0" style="-fx-background-color: #000;" />
+      <BorderPane layoutX="332.0" layoutY="535.0" prefHeight="77.0" prefWidth="12.0" style="-fx-background-color: #000;" />
+      <Text layoutX="14.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asiento disponibles: " />
+      <Circle fill="#1fff66" layoutX="134.0" layoutY="31.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text layoutX="12.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Asiento ocupados: " />
+      <Circle fill="#9eb684" layoutX="134.0" layoutY="60.0" radius="6.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="txtNumeroTaxi" layoutX="161.0" layoutY="156.0" prefHeight="27.0" prefWidth="63.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtHora" layoutX="286.0" layoutY="19.0" prefHeight="23.0" prefWidth="63.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="txtFechaSalida" layoutX="174.0" layoutY="22.0" prefHeight="17.0" prefWidth="54.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
