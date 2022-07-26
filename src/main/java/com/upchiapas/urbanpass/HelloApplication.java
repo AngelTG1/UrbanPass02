@@ -16,6 +16,7 @@ public class HelloApplication extends Application {
 
     public static String numeroTaxi;
     public static String horaSalida;
+    public static String fechaSalida;
     @Override
     public void start(Stage stage) throws IOException {
 
@@ -62,9 +63,10 @@ public class HelloApplication extends Application {
         stageTem.showAndWait();
     }
 
-    public static void setTicket(String nombreView, String tittle, String args1, String args2){
+    public static void setTicket(String nombreView, String tittle, String args1, String args2, String args3){
         asiento = args1;
         numeroTaxi = args2;
+        fechaSalida = args3;
         Stage stageTem = new Stage();
         Scene sceneTem = new Scene(loadFXML(nombreView));
         stageTem.setTitle(tittle);
@@ -75,6 +77,8 @@ public class HelloApplication extends Application {
         stageTem.initModality(Modality.WINDOW_MODAL);
         stageTem.showAndWait();
     }
+
+
 
 
     public static void main(String[] args) {

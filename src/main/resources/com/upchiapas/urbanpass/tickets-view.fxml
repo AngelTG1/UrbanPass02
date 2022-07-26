@@ -65,12 +65,7 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="14.0" layoutY="195.0" text="01/07/2022" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="12.0" />
-               </font>
-            </Label>
-            <Label fx:id="txtHora" layoutX="116.0" layoutY="195.0" prefHeight="17.0" prefWidth="71.0" textFill="WHITE">
+            <Label fx:id="txtHora" layoutX="130.0" layoutY="195.0" prefHeight="17.0" prefWidth="71.0" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -101,6 +96,11 @@
                </font>
             </Label>
             <Label fx:id="txtNoTaxi11" layoutX="144.0" layoutY="219.0" prefHeight="17.0" prefWidth="52.0" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtFechaSalida1" layoutX="18.0" layoutY="195.0" prefHeight="17.0" prefWidth="81.0" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -142,7 +142,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Label layoutX="287.0" layoutY="45.0" text="01/07/2022">
+      <Label fx:id="txtFechaSalida" layoutX="287.0" layoutY="45.0" prefHeight="17.0" prefWidth="81.0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>
@@ -177,7 +177,7 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <Label fx:id="txtHora1" layoutX="219.0" layoutY="215.0" prefHeight="17.0" prefWidth="71.0">
+      <Label fx:id="txtHora1" layoutX="229.0" layoutY="215.0" prefHeight="17.0" prefWidth="71.0">
          <font>
             <Font name="System Bold" size="12.0" />
          </font>

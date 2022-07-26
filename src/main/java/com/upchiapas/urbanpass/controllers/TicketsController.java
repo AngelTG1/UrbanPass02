@@ -22,12 +22,24 @@ public class TicketsController {
     private Label txtNoTaxi11;
 
     @FXML
+    private Label txtFechaSalida;
+
+    @FXML
+    private Label txtFechaSalida1;
+
+
+    @FXML
     void initialize(){
         txtAsiento.setText(HelloApplication.asiento);
         txtAsiento1.setText(HelloApplication.asiento);
         txtNoTaxi11.setText(HelloApplication.numeroTaxi);
         txtHora.setText(HelloApplication.horaSalida);
         txtHora1.setText(HelloApplication.horaSalida);
+        txtFechaSalida.setText(HelloApplication.fechaSalida);
+        txtFechaSalida1.setText(HelloApplication.fechaSalida);
+
     }
+
+
 
 }

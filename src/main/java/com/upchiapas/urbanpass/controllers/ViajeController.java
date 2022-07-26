@@ -20,6 +20,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.ResourceBundle;
 
+import static java.time.temporal.ChronoUnit.DAYS;
+
 public class ViajeController implements Initializable{
 
     @FXML
@@ -31,7 +33,7 @@ public class ViajeController implements Initializable{
 
     @FXML
     private DatePicker laFechaPicker;
-    private static String[] numerosTaxis = {"2255, 07:30 am", "2002 - 08:00 am", "3002 - 08:30 am", "1212 - 09:00 am"};
+    private static String[] numerosTaxis = {"2255 - 07:30 am", "2002 - 08:00 am", "3002 - 08:30 am", "1212 - 09:00 am"};
     @FXML
     void btnAceptarOnMouseClicked(MouseEvent event) {
         if (elChoiceBox.getSelectionModel().getSelectedIndex() == -1){
@@ -42,12 +44,16 @@ public class ViajeController implements Initializable{
             alert.setContentText("LLENE LA LISTA......");
             alert.showAndWait();
         }else {
-            int lugar = elChoiceBox.getSelectionModel().getSelectedIndex();
-            LocalDate elDate = laFechaPicker.getValue();
 
+            int lugar = elChoiceBox.getSelectionModel().getSelectedIndex();
+            //int  fecha1 = laFechaPicker.getValue().getMonthValue();
+
+            Object taxi;
             Validaciones.valirdarFecha(laFechaPicker, lugar);
             seleccionTaxi();
         }
+
+
     }
 
 
@@ -64,7 +70,6 @@ public class ViajeController implements Initializable{
     @FXML
     void getFecha(ActionEvent event) {
         LocalDate elDate = laFechaPicker.getValue();
-
     }
 
 
@@ -83,10 +88,10 @@ public class ViajeController implements Initializable{
     private void seleccionTaxi(){
         int numeroTaxi = elChoiceBox.getSelectionModel().getSelectedIndex(); //obtiene la posicion del array para saber la hora
         String taxi;
-        switch ((numeroTaxi+1)){
+        switch ((numeroTaxi)){
             case 1:
                 taxi = "2255";
-                HelloApplication.newUrban("urbans-view", "Metodo - Asiento", taxi, "07:30 am" );
+                HelloApplication.newUrban("urbans-view", "Metodo - Asiento", taxi, "07:30 am");
                 break;
             case 2:  taxi = "2002";
                 HelloApplication.newUrban("urbans-view", "Metodo - Asiento", taxi ,"08:00 am");

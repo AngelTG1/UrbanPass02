@@ -14,6 +14,14 @@ public class Corrida {
         this.lugarDestino = lugarDestino;
     }
 
+    public Corrida(LocalDate localDate) {
+        this.localDate = localDate;
+    }
+
+    public Corrida(String tipo, long dias) {
+
+    }
+
     public LocalDate getLocalDate() {
         return localDate;
     }

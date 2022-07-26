@@ -6,10 +6,12 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.DatePicker;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 import static java.time.temporal.ChronoUnit.DAYS;
 
 public class Validaciones {
+
     public static void valirdarFecha(DatePicker laFechaPicker, int posicion){
         int currentYear = LocalDate.now().getYear();
         int currentMonth = LocalDate.now().getMonthValue();
@@ -37,6 +39,7 @@ public class Validaciones {
                 alert.setContentText("Lista Correcta....");
                 alert.showAndWait();
                 System.out.println(laFechaPicker.getValue());
+                guardarFecha(laFechaPicker, posicion);
                 HelloApplication.setFXML("viaje-view","viaje");
             }
         } else {
@@ -46,5 +49,15 @@ public class Validaciones {
             alert.setContentText("El año debe ser mayor o igual al año actual");
             alert.showAndWait();
         }
+    }
+
+    public static void guardarFecha(DatePicker myDatePicker,  int posicion) {
+        posicion += 1;
+        String tipo;
+        LocalDate fecha = LocalDate.of(myDatePicker.getValue().getYear(), myDatePicker.getValue().getMonthValue(), myDatePicker.getValue().getDayOfMonth());
+        LocalDate fechaActual = LocalDate.now();
+        long dias = DAYS.between(fechaActual, fecha);
+        HelloApplication.setTicket("cargando-view", "viaje", "", "a", String.valueOf(fecha));
+
     }
 }

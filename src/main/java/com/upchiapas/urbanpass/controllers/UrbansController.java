@@ -47,7 +47,7 @@ public class UrbansController  {
         Button buttonTem;
         buttonTem = ((Button)event.getSource());
         //HelloApplication.newStage("registro-view", "Registro - Persona", buttonTem.getText());
-        HelloApplication.setTicket("tickets-view", "Ticket-Modulo", buttonTem.getText(), txtNumeroTaxi.getText());
+        HelloApplication.setTicket("tickets-view", "Ticket-Modulo", buttonTem.getText(), txtNumeroTaxi.getText(), txtFechaSalida.getText());
         buttonTem.setDisable(true);
     }
 
@@ -56,6 +56,7 @@ public class UrbansController  {
         txtNumeroTaxi.setText(HelloApplication.numeroTaxi);
         txtNumeroTaxi.setText(HelloApplication.numeroTaxi);
         txtHora.setText(HelloApplication.horaSalida);
+        txtFechaSalida.setText(HelloApplication.fechaSalida);
     }
 
 }
