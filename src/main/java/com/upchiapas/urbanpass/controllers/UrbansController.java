@@ -1,6 +1,7 @@
 package com.upchiapas.urbanpass.controllers;
 
 import com.upchiapas.urbanpass.HelloApplication;
+import com.upchiapas.urbanpass.modelos.Taxi;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -42,13 +43,17 @@ public class UrbansController  {
     @FXML
     private Label txtHora;
 
+
     @FXML
     void btnasiento1OnMouseClicked(MouseEvent event) {
+
         Button buttonTem;
         buttonTem = ((Button)event.getSource());
         //HelloApplication.newStage("registro-view", "Registro - Persona", buttonTem.getText());
         HelloApplication.setTicket("tickets-view", "Ticket-Modulo", buttonTem.getText(), txtNumeroTaxi.getText(), txtFechaSalida.getText());
         buttonTem.setDisable(true);
+
+
     }
 
     @FXML

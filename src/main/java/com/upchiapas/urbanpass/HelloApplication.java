@@ -58,7 +58,7 @@ public class HelloApplication extends Application {
         stageTem.setScene(sceneTem);
         stageTem.centerOnScreen();//centra la pantalla en tiempo de ejecucion
         stageTem.setResizable(false);
-        stageTem.initOwner(stage);
+        //stageTem.initOwner(stage);
         stageTem.initModality(Modality.WINDOW_MODAL);
         stageTem.showAndWait();
     }

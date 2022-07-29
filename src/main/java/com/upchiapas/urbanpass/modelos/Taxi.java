@@ -4,9 +4,9 @@ public class Taxi {
     private String asiento;
     private String numeroTaxi;
 
-    public Taxi(String asiento, String numeroTaxi) {
+    public Taxi(String asiento, long numeroTaxi) {
         this.asiento = asiento;
-        this.numeroTaxi = numeroTaxi;
+        this.numeroTaxi = String.valueOf(numeroTaxi);
     }
 
     public String getAsiento() {

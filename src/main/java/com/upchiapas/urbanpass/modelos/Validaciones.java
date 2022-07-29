@@ -7,11 +7,13 @@ import javafx.scene.control.DatePicker;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 import static java.time.temporal.ChronoUnit.DAYS;
 
 public class Validaciones {
 
+    static ArrayList<Taxi> listaTaxis = new ArrayList<>();
     public static void valirdarFecha(DatePicker laFechaPicker, int posicion){
         int currentYear = LocalDate.now().getYear();
         int currentMonth = LocalDate.now().getMonthValue();
@@ -39,7 +41,7 @@ public class Validaciones {
                 alert.setContentText("Lista Correcta....");
                 alert.showAndWait();
                 System.out.println(laFechaPicker.getValue());
-                guardarFecha(laFechaPicker, posicion);
+                guardarRegistros(laFechaPicker, posicion);
                 HelloApplication.setFXML("viaje-view","viaje");
             }
         } else {
@@ -51,13 +53,47 @@ public class Validaciones {
         }
     }
 
-    public static void guardarFecha(DatePicker myDatePicker,  int posicion) {
+    public static void guardarRegistros(DatePicker myDatePicker,  int posicion) {
         posicion += 1;
         String tipo;
         LocalDate fecha = LocalDate.of(myDatePicker.getValue().getYear(), myDatePicker.getValue().getMonthValue(), myDatePicker.getValue().getDayOfMonth());
         LocalDate fechaActual = LocalDate.now();
         long dias = DAYS.between(fechaActual, fecha);
         HelloApplication.setTicket("cargando-view", "viaje", "", "a", String.valueOf(fecha));
-
+        switch (posicion){
+            case 1:
+                tipo = "2255";
+                Taxi taxi = new Taxi(tipo, dias);
+                listaTaxis.add(taxi);
+                break;
+            case 2:
+                tipo = "2002";
+                Taxi taxi1 = new Taxi(tipo, dias);
+                listaTaxis.add(taxi1);
+                break;
+            case 3:
+                tipo = "3002";
+                Taxi taxi2 = new Taxi(tipo, dias);
+                listaTaxis.add(taxi2);
+                break;
+            case 4:
+                tipo = "1212";
+                Taxi taxi3 = new Taxi(tipo, dias);
+                listaTaxis.add(taxi3);
+                break;
+        }
     }
+
+    public static ArrayList<Taxi> getListaTaxis(){
+        return listaTaxis;
+    }
+
+
+    public static void registroAsientos(){
+        Scanner entrada = new Scanner(System.in);
+        int asiento;
+        System.out.println("Seleciones el asiento");
+        asiento = entrada.nextInt();
+    }
+
 }

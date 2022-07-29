@@ -18,6 +18,7 @@ import java.net.URL;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.ResourceBundle;
 
 import static java.time.temporal.ChronoUnit.DAYS;
@@ -33,6 +34,15 @@ public class ViajeController implements Initializable{
 
     @FXML
     private DatePicker laFechaPicker;
+
+
+
+
+    static ArrayList<Corrida> listaCorrida = new ArrayList<>();
+
+
+
+
     private static String[] numerosTaxis = {"2255 - 07:30 am", "2002 - 08:00 am", "3002 - 08:30 am", "1212 - 09:00 am"};
     @FXML
     void btnAceptarOnMouseClicked(MouseEvent event) {
@@ -79,6 +89,11 @@ public class ViajeController implements Initializable{
         //se agrega el arreglo de String
         elChoiceBox.getItems().addAll(numerosTaxis);
         //obtine la posicion de la hora de salidas.
+        if(Validaciones.getListaTaxis().isEmpty()){
+            String warning = "No hay asientos ";
+        }else{
+
+        }
 
 
     }
@@ -86,19 +101,24 @@ public class ViajeController implements Initializable{
 
 
     private void seleccionTaxi(){
+
         int numeroTaxi = elChoiceBox.getSelectionModel().getSelectedIndex(); //obtiene la posicion del array para saber la hora
         String taxi;
-        switch ((numeroTaxi)){
+        switch ((numeroTaxi+1)){
             case 1:
                 taxi = "2255";
+
                 HelloApplication.newUrban("urbans-view", "Metodo - Asiento", taxi, "07:30 am");
                 break;
-            case 2:  taxi = "2002";
+            case 2:
+                taxi = "2002";
                 HelloApplication.newUrban("urbans-view", "Metodo - Asiento", taxi ,"08:00 am");
-            case 3: taxi = "3002";
+            case 3:
+                taxi = "3002";
                 HelloApplication.newUrban("urbans-view", "Metodo - Asiento", taxi,"08:30 am" );
                 break;
-            case 4: taxi = "1212";
+            case 4:
+                taxi = "1212";
                 HelloApplication.newUrban("urbans-view", "Metodo - Asiento", taxi,"09:00 am" );
                 break;
         }

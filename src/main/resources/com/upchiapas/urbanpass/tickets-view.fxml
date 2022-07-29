@@ -15,7 +15,7 @@
       </ImageView>
       <ImageView fitHeight="48.0" fitWidth="48.0" layoutX="238.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@assts/img/taxi1.png" />
+            <Image url="@assts/img/autobus%20(1).png" />
          </image>
       </ImageView>
       <ImageView fitHeight="220.0" fitWidth="40.0" layoutX="14.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
